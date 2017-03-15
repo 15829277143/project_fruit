@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0; }
+  
+body{
+   /*width: 22.22rem;*/
+}
+  header{ width: 100%; height:2.9rem; background-color:#00AA00; }
+	header .left{width:30%; color:#fff; font-size:1.2rem; text-align:left; line-height:2.9rem; height:2.9rem;padding-left:0.5rem;}
+	header .middle{width:40%; color:#fff; font-size:1.2rem;text-align:center; line-height:2.9rem; height:2.9rem; }
+	header .right{width:30%; color:#fff; font-size:1.2rem;text-align:right; line-height:2.9rem; height:2.9rem; padding-right:0.5rem;}
+	
+	section{padding-bottom: 1.5rem;}
+	.img1{width: 1.45rem; height: 1.45rem;}
+	.sec_left{width: 25%;  float: left;}
+		#sort_for{}
+			.hot{height: 2rem; text-align: center; line-height: 2rem; font-size: 0.58rem; border-bottom: 1px #FFFFFF solid;}
+			#sort_for li{ background-color: #EEEEEE;height: 2rem; text-align: center; line-height: 2rem; font-size: 0.58rem; border-bottom: 1px #FFFFFF solid;}
+	.sec_right{ width: 75%; float: right;}
+		#sort_by{height: 2rem;}
+			#sort_by li{ width: 33.33%; text-align: center; line-height: 2rem; font-size: 0.58rem; border-bottom: 1px #EEEEEE solid; float: left;}
+	#berry_list{ width: 95%; padding-left: 1rem;}
+		#berry_list li{ padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px #EEEEEE solid;}
+	#mellon_list{ width: 95%; padding-left: 1rem;}
+		#mellon_list li{ padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px #EEEEEE solid;}
+	#orange_list{ width: 95%; padding-left: 1rem;}
+		#orange_list li{ padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px #EEEEEE solid;}
+	#stone_list{ width: 95%; padding-left: 1rem;}
+		#stone_list li{ padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px #EEEEEE solid;}
+	#kernel_list{ width: 95%; padding-left: 1rem;}
+		#kernel_list li{ padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px #EEEEEE solid;}
+			.good_pic img{ width: 30%; height: 5rem; float: left;}
+			.good_detail{ float: left; height: 5rem;  padding-top: 0.2rem; position: relative; width: 65%; }
+				.good_title{font-size: 0.8rem;margin-bottom: 5%; }
+				.good_price_level{ font-size:0.1rem;   border: 1px #E34941 solid; border-radius: 10%; color: #E34941;}
+				.good_price_size{display:block; margin-top: 1%; font-size: 0.41rem; color: #666666; }
+				.sales_volume{display:block; margin-top: 1%; font-size: 0.41rem; color: #666666; }
+				.good_price_text{display:block; margin-top: 1%; font-size: 0.6rem; color: #D7000F; }
+				.good_add img{width: 1rem; height: 1rem; position: absolute; right: 0; bottom: 0;}
+	footer{width: 100%;position: fixed; bottom: 0; padding-bottom: 0.6rem; padding-top: 0.6rem; border-top: 1px #EEEEEE solid;}
+		.place{ }
+			.place li{width: 25%; float: left;position:relative;}
+				.place li img{ display: block; margin:0 auto; width: 30%; height: 1.5rem;}
+				.place,li,.place_text{display: block; text-align: center; font-size: 0.29rem;}
+			#img1{width:13px;height:13px;background:red;border-radius:50%;position:absolute;right:30px;color:white;}

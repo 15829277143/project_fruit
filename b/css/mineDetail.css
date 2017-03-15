@@ -1,0 +1,122 @@
+#all_page{
+	width: 22.22rem;
+	margin: 0 auto;
+}
+header{
+	position:relative;
+	width: 22.22rem;
+	height: 10.17rem;
+	border-bottom: 0.3rem #f7edee solid;
+	background-image: url(../IMGme/11.jpg);
+	background-size: 22.22rem 10.17rem;
+}
+.shade{
+	position:absolute;
+	opacity:0.3;
+	background-color: green;
+	width: 22.22rem;
+	height: 9.87rem;
+}
+#header_menu{
+	padding-left:9rem;
+	padding-top:3rem;
+}
+#header_menu img{
+	border-radius: 1.575rem;
+	width: 3.15rem;
+	height: 3.15rem;
+}
+#header_menu p{
+	font-size: 0.81rem;
+	line-height: 1.3rem;
+	color: #daeec9;
+	padding-left: 0.4rem;
+	margin: 0;
+}
+
+.order{
+	border-bottom: 0.1rem #f7edee solid;
+	padding:0.5rem 1rem 0.5rem 1rem;
+}
+.order span:nth-child(1){
+	float: left;
+	padding-left: 0.2rem;
+	color: #655f5f;
+	font-size: 0.81rem;
+	line-height: 2.15rem;
+}
+.order span:nth-child(2){
+	float: right;
+	padding-right: 0.2rem;
+	font-size: 0.675rem;
+}
+.order span:nth-child(2) a{
+	color: #655f5f;
+	line-height: 2.15rem;
+}
+.order span:nth-child(2) a img{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.order_menu_li{
+	border-bottom: 0.3rem #f7edee solid;
+	padding-top: 0.5rem;
+}
+.order_menu_li li{
+	float: left;
+	padding:0.5rem 1rem;
+	width: 20%;
+}
+.order_menu_li li p{
+	font-size: 0.5rem;
+	color: #655f5f;
+	line-height: 1.35rem;
+	text-align: center;
+}
+.order_menu_li li a img{
+	width: 1.125rem;
+	height: 1.125rem;
+	margin: 0 auto;
+	display: block;
+}
+.more li{
+	border-bottom: 0.1rem #f7edee solid;
+	padding-left: 0.5rem; 
+	width: 21rem;
+	margin: 0 auto; 
+}
+.more li a{
+	display: block;
+	line-height: 2.7rem;
+	font-size: 0.81rem;
+	color: #655f5f;
+}
+.more li a img{
+	width: 0.7rem;
+	height: 0.7rem;
+	float: right;
+	margin-top: 1rem; 
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width:100%;
+}
+footer li{
+	float: left;
+	width: 25%;
+}
+footer li a{
+	display: block;
+	padding: 1rem 0 1rem 2rem;
+}
+footer li a img{
+	width: 1.35rem;
+	height: 1.35rem;
+}
+footer li a p{
+	color: #655f5f;
+	font-size: 0.585rem;
+	padding-top: 0.5rem;
+}

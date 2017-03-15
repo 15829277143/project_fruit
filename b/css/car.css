@@ -1,0 +1,167 @@
+body{
+  background-color:white;
+  padding-top:3rem;
+  padding-bottom: 6rem;
+}
+header{
+  height:3rem;
+  background-color: #43b738;
+  position:fixed;
+  top:0;
+  width:100%;
+  padding: 0 1.1rem;
+  display:flex;
+  align-items: center;
+  margin-bottom: 0.38rem;
+}
+header img{
+  width:0.58rem;
+  height:0.98rem;
+}
+header span{
+  color:white;
+  font-size: 1.35rem;
+  line-height: 1.35rem;
+  width:90%;
+  display:inline-block;
+  text-align: center;
+}
+.bg{
+  background-color: #dfe1df;
+  padding:1rem 0;
+}
+.message{
+  padding:0.85rem 0;
+  background-color: white;
+  /*margin:1rem 0;*/
+  position:relative;
+}
+.message ul{
+  padding-left: 0.2rem;
+}
+.message li{
+  height:1.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+.message p{
+  position:absolute;
+  top:0.3rem;
+  right:0.3rem;
+  background-image: url(../img/modify.png);
+  background-repeat: no-repeat;
+  padding-left:1.5rem;
+  background-size:1.2rem;
+  height:1.2rem;
+  line-height: 1.2rem;
+}
+.goods{
+  background-color: white;
+}
+.goods>p{
+  padding:0.5rem 0.3rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+.goods .list .left{
+  width:1rem;
+  height:1rem;
+  margin-right: 0.8rem;
+}
+.goods .list>li{
+  padding:0.5rem 0.8rem;
+  background-color:  #dfe1df;
+  width:100%;
+  display:flex;
+  align-items: center;
+  position:relative;
+  margin-bottom: 0.5rem;
+}
+.goods .center{
+  display:flex;
+  align-items: center;
+}
+.goods .center img{
+  width:7rem;
+  margin-right: 0.7rem;
+}
+.goods .center p{
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+.goods .list ul{
+  display:flex;
+  border:1px solid #7a7878;
+  border-left: none;
+  width:6.5rem;
+  position:absolute;
+  bottom:0.5rem;
+  right:0.6rem;
+}
+.goods .list ul li{
+  border-left:1px solid #7a7878;
+  flex-grow:1;
+  text-align: center;
+  height:1.6rem;
+  line-height: 1.5rem;
+  font-size: 0.7rem;
+}
+.goods .list ul .double{
+  flex-grow:2;
+}
+footer{
+  position:fixed;
+  bottom: 0;
+  width:100%;
+}
+footer .account{
+  height:2.5rem;
+  background-color: #d8d6d7;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.75rem;
+}
+footer .account img{
+  vertical-align:bottom;
+  margin-right: 0.3rem;
+}
+footer .account .right{
+  display: flex;
+  align-items: center;
+  height:100%;
+}
+.sum{
+  width:6rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.go{
+  height:100%;
+  width:4.3rem;
+  background-color: #43b738;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 0.9rem;
+}
+footer ul{
+  display:flex;
+  height:3rem;
+}
+footer ul li a img{
+  display: block;
+  width:2.5rem;
+  height:2.5rem;
+}
+footer ul li{
+  width:25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul a{
+  display: block;
+}
+footer{
+  background-color:white;
+}

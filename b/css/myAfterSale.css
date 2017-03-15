@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+  
+html, body{
+    height: 100%;
+    width: 100%;
+}
+  
+ul{
+    list-style: none;
+}
+  
+a{
+    text-decoration: none;
+}
+  
+.all-page{
+    background-color: #f0f2f5;
+}
+  
+.all-page .top{
+    background-color: #FFFFFF;
+    height: 2.9rem;
+    border-bottom: 0.05rem #cbcbcb solid;
+}
+  
+.all-page .top .back{
+	color: black;
+    width:30%;
+    font-size:1.2rem;
+    text-align:left;
+    line-height:2.9rem;
+    height:2.9rem;
+    padding-left:0.5rem;
+    float:left;
+}
+  
+.all-page .top .top-center{
+    width:40%;
+    font-size:0.89rem;
+    text-align:center;
+    line-height:2.9rem;
+    height:2.9rem;
+    float:left;
+}
+  
+.all-page .top .more{
+    width:30%;
+    font-size:1.2rem;
+    text-align:right;
+    line-height:2.9rem;
+    height:2.9rem;
+    padding-right:0.5rem;
+    float:left;
+    padding-bottom: 1rem;
+}
+  
+.all-page .goods{
+    padding-left: 0.6rem;
+    border-bottom: 1px #e7e7ef solid;
+    margin-bottom: 0.5rem;
+    background-color: #FFFFFF;
+}
+  
+.all-page .goods .goods-items{
+    height: 5.35rem;
+    padding-bottom: 0.35rem;
+    padding-top: 0.95rem;
+}
+  
+.all-page .goods .goods-items img{
+    width: 4.05rem;
+    height: 4.05rem;
+    border: 0.05rem #cbcbcb solid;
+    margin-right: 0.78rem;
+    -webkit-border-radius: 0.1rem;
+            border-radius: 0.1rem;
+}
+  
+.all-page .goods .goods-items .goods-right{
+    float: right;
+    width: 16rem;
+}
+  
+.all-page .goods .goods-items .goods-right .goods-name{
+    font-size: 0.66rem;
+    padding-right: 1.45rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+  
+.all-page .goods .goods-items .goods-right .goods-price{
+    padding-top: 1.6rem;
+    font-size: 0.66rem;
+    float: left;
+    margin-right: 1rem;
+}
+  
+.all-page .goods .goods-items .goods-right .goods-price span{}
+  
+.all-page .goods .goods-items .goods-right .goods-number{
+    padding-top: 1.6rem;
+    font-size: 0.66rem;
+    float: left;
+}
+  
+.all-page .goods .goods-items .goods-right .goods-number span{}
+  
+.all-page .serve-kind{
+    padding-left: 0.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #e7e7ef solid;
+    margin-bottom: 0.5rem;
+    background-color: #FFFFFF;
+}
+  
+.all-page .serve-kind p{
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    font-size: 0.64rem;
+}
+  
+.all-page .serve-kind .serve-choose p{
+	display: inline-block;
+	padding:0;
+    width: 4.54rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #FFFFFF;
+    border: 0.05rem #bdbebd solid;
+    -webkit-border-radius: 0.1rem;
+            border-radius: 0.1rem;
+}
+  
+.all-page .problem{
+    padding-left: 0.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #e7e7ef solid;
+    margin-bottom: 0.5rem;
+    background-color: #FFFFFF;
+}
+  
+.all-page .problem p{
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.64rem;
+    font-size: 0.64rem;
+    border-bottom: 0.05rem #cbcbcb solid;
+}
+  
+.all-page .problem input{
+    width: 100%;
+    height: 4.34rem;
+}
+  
+.all-page .problem-photo{
+    padding-right: 1rem;
+    padding-left: 0.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #e7e7ef solid;
+    margin-bottom: 0.5rem;
+    background-color: #FFFFFF;
+}
+  
+.all-page .problem-photo .ptitle{
+    padding-top: 1rem;
+    padding-bottom: 1.44rem;
+    font-size: 0.64rem;
+}
+  
+.all-page .problem-photo .upLoading{
+    font-size: 3.3rem;
+    margin-bottom: 1rem;
+    color: #bdbebd;
+}
+  
+.all-page .problem-photo .psuggest{
+    font-size: 0.72rem;
+    color: #84868c;
+    text-align: justify;
+}
+  
+.all-page .next{
+    position: relative;
+    height: 5rem;
+    width: 100%;
+}
+  
+.all-page .next #suggest{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 2rem;
+    width: 10rem;
+    background-color: lawngreen;
+    border:none;
+    -webkit-border-radius: 0.05rem;
+            border-radius: 0.05rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

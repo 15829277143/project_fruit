@@ -1,0 +1,15 @@
+/*
+* @Author: anchen
+* @Date:   2016-11-02 20:49:20
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-11-03 16:49:21
+*/
+*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;color:#000;}
+body{margin:0;overflow-x: hidden;font-size:12px;font-family:Arial,Verdana,Tahoma,"微软雅黑","黑体";line-height:120%;background:#fff;margin:0;overflow-x:hidden;}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,form,table{margin:0;padding:0;}
+a,img{border:none;}
+li{list-style:none;}
+a{text-decoration:none; color:#000000;border:0;}
+.clearfix:before,.clearfix:after{display:table;content:"";}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}

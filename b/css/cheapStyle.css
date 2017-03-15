@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #f4f4f4;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    border-bottom: 0.06rem solid #cccccc;
+    background-color: white;
+    z-index: 1;
+}
+.header .search_title{
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 3.2rem;
+    color:lightslategrey;
+}
+.header .back_fonts{
+    width:15%;
+    position: absolute;
+    color:lightslategrey;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3.2rem;
+    left:0;
+    top:0;
+}
+.section{
+    
+    width: 100%;
+}
+.section .banner{
+    width:100%;
+    border-bottom: 0.06rem solid #cccccc;
+}
+.section .banner img{
+    width: 100%;
+}
+.section .goods_List {
+    width: 100%;
+}
+.section .goods_List .goods {
+    width: 100%;
+    border-bottom: 0.06rem solid #CCCCCC;
+    float: left;
+    padding: 0.7rem 0.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap:nowrap;
+        -ms-flex-wrap:nowrap;
+            flex-wrap:nowrap;
+    position: relative;
+}
+.section .goods_List .goods img {
+    width: 7.5rem;
+    height:7.5rem;
+    padding-right:0.5rem ;
+}
+.section .goods_List .goods div{
+    padding:0.3rem 0.2rem;
+}
+.section .goods_List .goods .info-name {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 2.0rem;
+}
+.section .goods_List .goods .info-kind {
+    font-size: 0.8rem;
+    width: 2.5rem;
+    padding: 0.1rem 0.3rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #FEAE1B;
+    border: 0.1rem #FEAE1B solid;
+    -webkit-border-radius: 0.2rem;
+            border-radius: 0.2rem;
+    margin: 0.5rem 0rem;
+}
+.section .goods_List .goods .info-weight {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: #cccccc;
+}
+.section .goods_List .goods .info-money {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: orange;
+    font-weight: bold;
+}
+.section .goods_List .goods .info-add{
+    font-size: 1.5rem;
+    color: orange;
+    position: absolute;
+    bottom: 1.0rem;
+    right: 0.7rem;
+}

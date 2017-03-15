@@ -1,0 +1,19 @@
+p{
+	color: darkgrey;
+	font-size: 14px;
+	padding: 9px;
+}
+
+#city{
+	margin-top:10px;
+}
+
+#city li{
+	text-align: center;
+	line-height: 35px;
+	color:white;
+}
+
+#city li:active{
+	color:red;
+}

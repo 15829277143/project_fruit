@@ -1,0 +1,32 @@
+.all-page .top{
+    background-color: #FFFFFF;
+    height: 2.9rem;
+    border-bottom: 0.05rem #cbcbcb solid;
+}
+.all-page .top .back{
+    width:30%;
+    font-size:1.2rem;
+    text-align:left;
+    line-height:2.9rem;
+    height:2.9rem;
+    padding-left:0.5rem;
+    float:left;
+}
+.all-page .top .top-center{
+    width:40%;
+    font-size:0.89rem;
+    text-align:center;
+    line-height:2.9rem;
+    height:2.9rem;
+    float:left;
+}
+.all-page .top .more{
+    width:30%;
+    font-size:1.2rem;
+    text-align:right;
+    line-height:2.9rem;
+    height:2.9rem;
+    padding-right:0.5rem;
+    float:left;
+    padding-bottom: 1rem;
+}

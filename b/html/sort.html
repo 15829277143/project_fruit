@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+<meta charset="utf-8">
+<title>sort</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--描述和关键词-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<!--width  ----  viewport的宽度（width=device-width意思是：宽度等于设备宽度）
+initial-scale ----- 初始的缩放比例
+minimum-scale ----- 允许用户缩放到的最小比例
+maximum-scale ----- 允许用户缩放到的最大比例
+user-scalable ----- 用户是否可以手动缩放-->
+<meta name="format-detection" content="telephone=no" />
+<!--一般情况下，IOS和Android系统都会默认某长度内的数字为电话号码，即使不加也是会默认显示为电话的，因此，取消这个很有必要！-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--它表示：允许全屏模式浏览，隐藏浏览器导航栏-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--它指定的iphone中safari顶端的状态条的样式
+默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）-->
+<link href="../css/sortCommon.css" rel="stylesheet" type="text/css">
+<link href="../css/sortStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<header class="clearfix">
+	<div class="left fl" ><a href="javascript:history.go(-1)"><</a></div>
+    <div class="middle fl">配送至：</div>
+    <div class="right fr"><a href="search.html"><img src="../IMGsort/search.png" class="img1"></a></div>
+</header>
+<section class="clearfix">
+	<div class="sec_left">
+		<p class="hot">热销榜</p>
+		<ul id="sort_for">
+			<!--
+            	<li>热销榜</li>
+            -->
+			<li style="background-color: #FFFFFF;">浆果</li>
+			<li>瓜果</li>
+			<li>橘果</li>
+			<li>核果</li>
+			<li>仁果</li>		
+		</ul>
+	</div>
+	<div class="sec_right">
+		<ul id="sort_by" class="clearfix">
+			<li>综合排序</li>
+			<li id="price">按价格</li>
+			<li id="sales">按销量</li>
+		</ul>
+		<div id="fruit_list">
+			<ul id="berry_list" class="contain_list">
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/lanmei.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">精选蓝莓</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一盒/约30粒</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>13.9</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/strawberry.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">草莓</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一盒/约30粒</span>
+							<p class="sales_volume"><span>30</span>人买过</p>
+							<p class="good_price_text">￥<span>19.8</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/sangshen.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">桑葚</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>96</span>人买过</p>
+							<p class="good_price_text">￥<span>20.8</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/mihoutao.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">猕猴桃</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>48</span>人买过</p>
+							<p class="good_price_text">￥<span>10.2</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+			</ul>
+			<ul id="mellon_list" class="contain_list" style="display: none;">
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/xigua.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">西瓜</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>2.5</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/hamigua.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">哈密瓜</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>5.2</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/huanggua.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">黄瓜</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>2.3</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/renshenguo.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">人参果</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一个</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>5</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+			</ul>
+			<ul id="orange_list" class="contain_list" style="display: none;">
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/chengzi.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">精选橙子</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤/约3个</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>3.0</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/juzi.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">橘子</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤/约6个</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>2.5</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/lemon.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">柠檬</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一个</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>2.0</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/youzi.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">蜜柚</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>3.5</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+			</ul>
+			<ul id="stone_list" class="contain_list" style="display: none;">
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/lizi.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">李子</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>2.8</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/peach.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">桃子</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>3.8</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/xing.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">杏</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>5.6</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/yingtao.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">樱桃</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>6.3</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+			</ul>
+			<ul id="kernel_list" class="contain_list" style="display: none;">
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/apple.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">精选苹果</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>5.4</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/li.jpg" ></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">梨</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>3.6</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/pipa.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">琵琶</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>20.8</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="good_pic"><img src="../IMGsort/shanzha.jpg"></div>
+					<div class="good_detail" class="clearfix">
+						<p class="good_title">山楂</p>
+						<div class="good_price">
+							<span class="good_price_level">精选</span>
+							<span class="good_price_size">一斤</span>
+							<p class="sales_volume"><span>59</span>人买过</p>
+							<p class="good_price_text">￥<span>10.2</span></p>
+						</div>
+						<div class="good_add"><img src="../IMGsort/add.png"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<footer class="clearfix">
+	<ul class="place clearfix">
+		<li><a href="index.html"><img src="../IMGme/7.jpg"></a><span class="place_text">主页</span></li>
+		<li><a href="sort.html"><img src ="../IMGme/8.jpg"</a><span class="place_text">分类</span></li>
+		<li><div id='img1'>0</div><a href="car.html"><img src="../IMGme/9.jpg"></a><span class="place_text">购物车</span></li>
+		<li><a href="mine.html"><img src="../IMGme/10.jpg"></a><span class="place_text">我的</span></li>
+	</ul>
+</footer>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	fontSelf();
+}
+window.onresize = function () {
+	fontSelf();
+};
+function fontSelf() {
+	var wHtml = document.getElementById('html');
+	var w = document.documentElement.clientWidth;
+	w =  w > 768 ? 768 : document.documentElement.clientWidth;
+	wHtml.style.fontSize = w * 0.045 + 'px';
+};
+var oUl1 = document.getElementById("sort_for");
+var aLi1 = oUl1.getElementsByTagName("li");
+var oBox = document.getElementById("fruit_list");
+var aUl = oBox.getElementsByTagName("ul");
+var oImg=document.getElementById("img1");
+var aDiv=document.getElementsByClassName("good_add"); 
+//var arr_json=[{"id":"berry_list"},{"id":"mellon_list"},{"id":"orange_list"},{"id":"stone_list"},{"id":"kernel_list"}];
+for(var i=0; i<aLi1.length;i++){
+	aLi1[i].index = i;
+	aLi1[i].onclick = function(){
+		var n = this.index;
+		for(var j=0; j<aLi1.length;j++){
+			aLi1[j].style.backgroundColor = "#EEEEEE";
+			aLi1[j].style.color="#000";
+			}
+		this.style.backgroundColor = "#FFFFFF";
+		this.style.color="#18c655";
+		for(var j=0;j<aUl.length;j++){
+			aUl[j].style.display = 'none';
+			}
+		aUl[n].style.display = 'block';
+		}
+	}
+for(var i=0;i<aDiv.length;i++){
+	aDiv[i].onclick=function(){
+		oImg.innerHTML++;
+	}	
+}
+$(function(){
+		var onOff = true;
+	    $("#price").click(function(){
+	    	if(onOff){
+//	    		for(var i=0;i<arr_json.length;i++){
+//	    			for(var )
+//	    		}
+		        var div= $('#berry_list').find('li');
+		        var arr = Array.prototype.slice.call(div);
+		        arr.sort(function(v1,v2){
+		            var v1RMB = parseInt($(v1).find('.good_price_text span')[0].innerHTML)
+		            var v2RMB = parseInt($(v2).find('.good_price_text span')[0].innerHTML)
+		            if(v1RMB>v2RMB){
+		                return 1;
+		            }else{
+		                return -1;
+		            }
+		        });
+		        for(var i=0;i<arr.length;i++){
+		            $('#berry_list')[0].appendChild(arr[i]);
+		        }
+		        onOff = false;
+	        }
+        	else{
+        		var div= $('#berry_list').find('li');
+		        var arr = Array.prototype.slice.call(div);
+		        arr.sort(function(v1,v2){
+		            var v1RMB = parseInt($(v1).find('.good_price_text span')[0].innerHTML)
+		            var v2RMB = parseInt($(v2).find('.good_price_text span')[0].innerHTML)
+		            if(v1RMB<v2RMB){
+		                return 1;
+		            }else{
+		                return -1;
+		            }
+		        });
+		        for(var i=0;i<arr.length;i++){
+		            $('#berry_list')[0].appendChild(arr[i]);
+		        }
+		        onOff = true;
+        	}
+	    });
+	}); 
+	
+	$(function(){
+	    $("#sales").click(function(){
+		        var div= $('#berry_list').find('li');
+		        var arr = Array.prototype.slice.call(div);
+		        arr.sort(function(v1,v2){
+		            var v1RMB = parseInt($(v1).find('.sales_volume span')[0].innerHTML)
+		            var v2RMB = parseInt($(v2).find('.sales_volume span')[0].innerHTML)
+		            if(v1RMB>v2RMB){
+		                return 1;
+		            }else{
+		                return -1;
+		            }
+		        });
+		        for(var i=0;i<arr.length;i++){
+		            $('#berry_list')[0].appendChild(arr[i]);
+		        }
+	    });
+	});  
+	
+//	$("#price").click(function(){
+//	        var div= $('#mellon_list').find('li');
+//      var arr = Array.prototype.slice.call(div);
+//      arr.sort(function(v1,v2){
+//          var v1RMB = parseInt($(v1).find('.good_price_text span')[0].innerHTML)
+//          var v2RMB = parseInt($(v2).find('.good_price_text span')[0].innerHTML)
+//          if(v1RMB>v2RMB){
+//              return 1;
+//          }else{
+//              return -1;
+//          }
+//      });
+//      for(var i=0;i<arr.length;i++){
+//          $('#mellon_list')[0].appendChild(arr[i]);
+//      }
+//      
+//	    });
+//	}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>adress details</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/css/style.css">
+    <link rel="stylesheet" href="../css/address/details.css">
+</head>
+<body>
+    <header class="header">
+    	<a href="address.html" ><i class="fa fa-angle-left"></i></a>
+    	<span class="top">添加地址</span>
+    	<a href="#" ></a>
+    </header>
+    <form action="#" method="post" name="information">
+    	<label class="name">姓名<input id="name" name="name" value="" placeholder="收货人姓名" type="text" ></label>
+    	<div class="radio">
+    		<label><input type="radio" name="radio">先生</label>
+    	    <label><input type="radio" name="radio">女士</label>
+    	</div>
+    	<hr class="hr"/>
+    	<p><label class="name">手机号码<input id="number" type="text" placeholder="请输入收货人联系电话" name="name" value=""></label></p>
+    	<a href="cities.html"><label class="name cities">所在城市<input id="citied" type="text" placeholder="点击选择" name="name" value=""></label></a>
+    	<hr class="hr"/>
+    	<p><a href="map.html"><label class="name">收货地址<input type="text" placeholder="点击选择" name="name" value=""></label></a></p>
+    	<label class="name">门牌号<input type="text" placeholder="请输入街道小区等详细信息" name="name" value=""></label>
+    	<footer class="footer"><input type="submit" name="submit" value="保存" id="submit"></footer>
+    </form>
+    
+    <script src="../js-address/jquery.min.js"></script>
+    <!--<script src="./js/jquery.cookie.js"</script>-->
+    <script src="../js-address/details.js"></script> 
+</body>
+</html>
