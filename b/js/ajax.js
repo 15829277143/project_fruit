@@ -47,7 +47,11 @@ function show() {
 	});
 
 }
-
+var num = $('#food-num').html();
+			$('.food-add').on('touchend', function() {
+				num++;
+				$('#food-num').html(num);
+			});
 //function getAddress() {
 //	$.ajax({
 //		type: "get",
@@ -69,7 +73,7 @@ function show() {
 //	});
 //}
 
-show();
+//show();
 
 //alert($('.food-add').length)
 //$('.food-add').on('touchend',function() {
