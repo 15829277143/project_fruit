@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html id="html">
+
+	<head>
+		<meta charset="utf-8">
+		<title>无标题文档</title>
+
+		<meta name="description" content="" />
+		<!--描述和关键词-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!--width  ----  viewport的宽度（width=device-width意思是：宽度等于设备宽度）
+initial-scale ----- 初始的缩放比例
+minimum-scale ----- 允许用户缩放到的最小比例
+maximum-scale ----- 允许用户缩放到的最大比例
+user-scalable ----- 用户是否可以手动缩放-->
+		<meta name="format-detection" content="telephone=no" />
+		<!--一般情况下，IOS和Android系统都会默认某长度内的数字为电话号码，即使不加也是会默认显示为电话的，因此，取消这个很有必要！-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!--它表示：允许全屏模式浏览，隐藏浏览器导航栏-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--它指定的iphone中safari顶端的状态条的样式
+默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" />
+	</head>
+
+	<body id="body">
+		<!--carousel轮播-->
+		<div id="header">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				</ol>
+		
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="IMG/banner1.jpg" alt="...">
+					</div>
+					<div class="item" id="banner1">
+						<img src="IMG/banner2.jpg" alt="...">
+					</div>
+					<div class="item">
+						<img src="IMG/banner3.jpg" alt="...">
+					</div>
+					<div class="item">
+						<img src="IMG/banner4.jpg" alt="...">
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<!--header定位框-->
+		<div class="search" id="position">
+			<div id="l-map"></div>
+			<div id="r-result"><input type="text" id="suggestId" value="配送至：" /></div>
+			<div id="searchResultPanel"></div>
+			<a href="html/search.html"></a>
+		</div>
+
+		<!--活动-->
+		<div class="active1">
+			<div class="active1-box clearfix">
+				<div class="active-recommend">
+					<div>
+						<a href="html/fruit_recommend.html">
+							<img src="IMG/recommend.png" />
+						</a>
+					</div>
+					<p>店长推荐</p>
+				</div>
+				<div class="active-sale">
+					<div>
+						<a href="html/fruit_todaySale.html">
+							<img src="IMG/sale.png" />
+						</a>
+						
+					</div>
+					<P>今日特价</P>
+				</div>
+				<div class="active-new">
+					<div>
+						<a href="html/fruit_newgoods.html">
+							<img src="IMG/new.png" />
+						</a>
+						
+					</div>
+					<p>新品尝鲜</p>
+				</div>
+				<div class="active-combination">
+					<div>
+						<a href="html/fruit_setSale.html">
+							<img src="IMG/combination.png" />
+						</a>
+					</div>
+					<p>组合优惠</p>
+				</div>
+			</div>
+		</div>
+		<!--种类分割线-->
+		<div class="line-under-active"></div>
+
+		<!--加载更多-->
+		<p class="list-more clearfix">
+			<span>橘果</span>
+			<a href="html/sort.html">更多&rang;</a>
+		</p>
+
+		<!--商品详情-->
+		<div class="orange clearfix">
+			<img src="IMG/orange.jpg" />
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="line-under-active"></div>
+		<p class="list-more clearfix">
+			<span>橘果</span>
+			<a href="html/sort.html">更多&rang;</a>
+		</p>
+
+		<div class="orange clearfix">
+			<img src="IMG/orange.jpg" />
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="line-under-active"></div>
+		<p class="list-more clearfix">
+			<span>橘果</span>
+			<a href="html/sort.html">更多&rang;</a>
+		</p>
+
+		<div class="orange clearfix">
+			<img src="IMG/orange.jpg" />
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square"></i></span>
+				</div>
+			</div>
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+			<div class="orange-list clearfix">
+				<div class="orange-list-info clearfix">
+					<img src="IMGsort/mihoutao.jpg" />
+					<span class="info-name">精选猕猴桃</span>
+					<span class="info-kind">精选</span>
+					<span class="info-weight">一份/约。。。个</span>
+					<span class="info-money">&Yuml;15</span>
+					<span class="food-add"><i class="fa  fa-plus-square "></i></span>
+				</div>
+			</div>
+		</div>
+		<p class="go-more">
+			<a href="html/sort.html">点击查看更多&rsaquo;&rsaquo;</a>
+		</p>
+		<!--底部切换按钮-->
+		<footer class="footer clearfix">
+			<a class="Home" href="index.html">
+				<img src="IMG/home.png" />
+				<p>首页</p>
+			</a>
+			<a class="iClassify" href="html/sort.html">
+				<img src="IMG/sort .png" />
+				<p>分类</p>
+			</a>
+			<a class="iCart" href="html/car.html">
+				<img src="IMG/car.png" />
+				<p>购物车</p>
+				<div id="food-num"></div>
+			</a>
+			<a class="iMy" href="html/mine.html">
+				<img src="IMG/mine.png" />
+				<p>我的</p>
+			</a>
+		</footer>
+
+		<!--绿定位条-->
+		<div class="search1" id="position1">
+			<div id="l-map"></div>
+			<div id="r-result"><input type="text" id="suggestId" placeholder="配送至：" /></div>
+			<div id="searchResultPanel"></div>
+			<a href="html/search.html"></a>
+		</div>
+		<!--回到顶部-->
+		<div class="back">
+			<i class="fa fa-angle-double-up "></i>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9WFDj9GdDjPflrPIammWAG9SLhGU1vcn"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+	</body>
+
+</html>
